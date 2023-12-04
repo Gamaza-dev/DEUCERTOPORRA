@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.projetoquartaessevai.AddContatoo">
+
+    <EditText
+        android:id = "@+id/nome"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Novo Contato"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nome"
+        android:layout_below="@+id/nome"
+        android:ems="10"
+        android:hint="Numero"
+        android:inputType="number"
+        android:minHeight="48dp"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/numero"
+        android:layout_below="@+id/numero"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress|textPersonName"
+        android:minHeight="48dp"/>
+    <EditText
+        android:id="@+id/empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/email"
+        android:layout_below="@+id/email"
+        android:ems="10"
+        android:hint="Empresa"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"/>
+    <Button
+        android:id="@+id/relacionamento"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empresa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="Adicionar Relacionamento"/>
+    <Button
+        android:id="@+id/adicionar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relacionamento"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Adicionar Contato"/>
+
+</RelativeLayout>
